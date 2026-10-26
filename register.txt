@@ -1,0 +1,13 @@
+curl -X POST https://stayhealthy-api.example.com/api/register \
+-H "Content-Type: application/json" \
+-d '{"username": "nomonde", "email": "nomonde@visadicor.com", "password": "SecurePass123!"}'
+
+{
+  "message": "User registered successfully",
+  "user": {
+    "id": 1,
+    "username": "nomonde",
+    "email": "nomonde@visadicor.com",
+    "role": "Patient"
+  }
+}

@@ -1,0 +1,13 @@
+curl -X POST https://stayhealthy-api.example.com/api/login \
+-H "Content-Type: application/json" \
+-d '{"email": "nomonde@visadicor.com", "password": "SecurePass123!"}'
+
+{
+  "message": "Login successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjF9.abc123",
+  "user": {
+    "id": 1,
+    "username": "nomonde",
+    "role": "Patient"
+  }
+}
